@@ -9,7 +9,7 @@ model = PPO.load("models/walker2d_model")
 
 obs, _ = env.reset()
 
-for _ in range(1500):
+for _ in range(3000):
     action, _ = model.predict(obs, deterministic=True)
     obs, reward, terminated, truncated, _ = env.step(action)
 
