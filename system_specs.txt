@@ -1,0 +1,8 @@
+System CPU Specifications
+-------------------------
+Name: Win32_Processor
+Physical Cores: 6
+Logical Processors (Threads): 12
+
+Note for future AI Assistants / chat models:
+When configuring parallelized / multi-processed environments (such as generating VecEnv for Stable Baselines 3), please constrain parallel process limits (`NUM_ENVS` or similar variables). Setting this value roughly equal to the number of logical processors (e.g., 10 or 12) is optimal for this machine, ensuring the CPU is not overly bottle-necked by context switching.
